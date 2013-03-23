@@ -2,8 +2,8 @@
 function inicio(){
 	
 	document.addEventListener("deviceready",function(){
-	
- var myLatlng = new google.maps.LatLng(coordenadas()['latitude'],coordenadas()['longitude']);
+	var coords = coordenadas();
+ var myLatlng = new google.maps.LatLng(coords()['latitude'],coords()['longitude']);
   var mapOptions = {
     zoom: 4,
     center: myLatlng,
