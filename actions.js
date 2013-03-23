@@ -3,7 +3,7 @@ function inicio(){
 	
 	document.addEventListener("deviceready",function(){
 	var coords = coordenadas();
- var myLatlng = new google.maps.LatLng(coords()['latitude'],coords()['longitude']);
+ var myLatlng = new google.maps.LatLng(coords['latitude'],coords['longitude']);
   var mapOptions = {
     zoom: 4,
     center: myLatlng,
