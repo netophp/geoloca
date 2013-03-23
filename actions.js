@@ -3,12 +3,12 @@ function inicio(){
 	
 	document.addEventListener("deviceready",function(){
 	var coords = coordenadas();
- var myLatlng = new google.maps.LatLng(coords['latitude'],coords['longitude']);
-  var mapOptions = {
-    zoom: 4,
-    center: myLatlng,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
+ 	var myLatlng = new google.maps.LatLng(coords['latitude'],coords['longitude']);
+  	var mapOptions = {
+		zoom: 2,
+		center: myLatlng,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	  }
   
   var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
@@ -28,7 +28,7 @@ function coordenadas(){
 	
 	function onSuccess(position) {
     	arr['latitude']=position.coords.latitude;
-        arr['Longitude']=position.coords.longitude;
+        arr['longitude']=position.coords.longitude;
 };
 
 // onError Callback receives a PositionError object
