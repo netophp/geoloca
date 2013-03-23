@@ -5,7 +5,7 @@ function inicio(){
 	
  var myLatlng = new google.maps.LatLng(coordenadas()['latitude'],coordenadas()['longitude']);
   var mapOptions = {
-    zoom: 8,
+    zoom: 4,
     center: myLatlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
